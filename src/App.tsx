@@ -21,6 +21,9 @@ function App() {
     else if (wiredType === "condicoes positivas") return "cond_positiva";
     else if (wiredType === "condicoes negativas") return "cond_negativa";
     else if (wiredType === "extras") return "extra";
+    else if (wiredType === "operadores") return "operador";
+    else if (wiredType === "iron wireds") return "iron";
+    else if (wiredType === "comparadores") return "comparador";
   }
 
   function changeWiredType(wiredType: IWiredType) {

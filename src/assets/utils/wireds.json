@@ -555,7 +555,7 @@
             "help": "Descongela o usuário ativador."
         },
         {
-            "name": "Congelar/descongelar",
+            "name": "Congelar / descongelar",
             "help": "Congela o usuário ativador por X segundos e logo depois descongela."
         }
     ],

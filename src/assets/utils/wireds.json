@@ -544,11 +544,7 @@
         },
         {
             "name": "Andar rápido",
-            "help": "Habilita/desabilita o faskwalk no usuário ativador."
-        },
-        {
-            "name": "Fastwalk",
-            "help": "O tempo de cada passo que o usuário der é cortado pela metade (valores 0 ou 1)."
+            "help": "Habilita/desabilita o faskwalk no usuário ativador. O tempo de cada passo que o usuário der é cortado pela metade (valores 0 ou 1)."
         },
         {
             "name": "Congelar",
@@ -557,6 +553,10 @@
         {
             "name": "Descongelar",
             "help": "Descongela o usuário ativador."
+        },
+        {
+            "name": "Congelar/descongelar",
+            "help": "Congela o usuário ativador por X segundos e logo depois descongela."
         }
     ],
     "iron wireds": [

@@ -1,0 +1,686 @@
+{
+    "ativadores": [
+        {
+            "name": "Entra no quarto",
+            "help": "Ativa os efeitos da pilha quando o usuário ativador entra no quarto."
+        },
+        {
+            "name": "Sai do quarto",
+            "help": "Ativa os efeitos da pilha quando o usuário ativador sai do quarto."
+        },
+        {
+            "name": "Anda no mobi",
+            "help": "Ativa os efeitos da pilha quando o usuário ativador anda no mobi selecionado."
+        },
+        {
+            "name": "Sai do mobi",
+            "help": "Ativa os efeitos da pilha quando o usuário ativador sai do mobi selecionado."
+        },
+        {
+            "name": "Estado do mobi é alterado",
+            "help": "Ativa os efeitos da pilha quando o usuário ativador altera o estado do mobi selecionado. Apenas usuários com direitos podem disparar a ativação com mobis que exigem direitos para alterar o estado."
+        },
+        {
+            "name": "Altera o estado do mobi",
+            "help": "Ativa os efeitos da pilha quando o usuário ativador tenta alterar o estado do mobi selecionado. Qualquer usuário pode disparar a ativação com outros mobis além dos alteráveis sem direitos."
+        },
+        {
+            "name": "Anti loop AFK",
+            "help": "Ativa os efeitos da pilha quando o usuário ativador fica parado ou sem clicar para andar. A contagem de usuário reinicia sempre que o jogador clicar em algum lugar que seja possível alcançar andando."
+        },
+        {
+            "name": "Anti AFK",
+            "help": "Ativa os efeitos da pilha quando o usuário ativador fica parado ou sem clicar para andar e sem mandar balões de mensagem. A contagem de usuário reinicia sempre que o jogador clicar em algum lugar que seja possível alcançar andando ou quando envia balões de mensagem."
+        },
+        {
+            "name": "No tempo escolhido",
+            "help": "Ativa os efeitos da pilha quando o tempo do quarto é igual ao valor determinado no wired (podendo ser de 0s à 60s dependendo do hotel). Esse ativador trabalha em conjunto com o efeito reiniciar tempo."
+        },
+        {
+            "name": "No tempo escolhido longo",
+            "help": "Ativa os efeitos da pilha quando o tempo do quarto é igual ao valor determinado no wired (podendo ser de 0s à 600s dependendo do hotel). Esse ativador trabalha em conjunto com o efeito reiniciar tempo."
+        },
+        {
+            "name": "Começo de jogo",
+            "help": "Ativa os efeitos da pilha quando um cronometro de jogo começa a contagem regressiva."
+        },
+        {
+            "name": "Fim de jogo",
+            "help": "Ativa os efeitos da pilha quando um cronometro de jogo termina a contagem regressiva (alcança 0 segundos)."
+        },
+        {
+            "name": "Ativador é movido",
+            "help": "Ativado quando esse wired ativador é movido para a pilha que queira executar os efeitos."
+        },
+        {
+            "name": "Diz algo",
+            "help": "Ativa os efeitos da pilha quando o usuário ativador diz a palavra-chave em algum lugar do balão de mensagem."
+        },
+        {
+            "name": "Diz algo (exato)",
+            "help": "Ativa os efeitos da pilha quando o usuário ativador diz a palavra-chave exatamente igual à descrita no wired, sem mais letras ou frases no balão de mensagem."
+        },
+        {
+            "name": "Diz comando",
+            "help": "Ativa os efeitos da pilha quando o usuário ativador diz o comando descrito no wired. Comandos como - :sit, :idle, :enable, :handitem, :pet."
+        },
+        {
+            "name": "Batida",
+            "help": "Ativa os efeitos da pilha quando o usuário ativador é colidido por algum mobi. Esse ativador trabalha em conjunto com efeitos de movimento, como: perseguir, fugir, mudar direção, mover e rotacionar, colisão em volta e colisão de topo."
+        },
+        {
+            "name": "Jogador é colidido",
+            "help": "Ativa os efeitos da pilha quando o usuário ativador é colidido por outro usuário. Efeitos aplicados em usuários (teleporte, entrar na equipe, caminhar até o mobi, dentre outros) são feitos no usuário que foi colidido."
+        },
+        {
+            "name": "Jogador colidiu",
+            "help": "Ativa os efeitos da pilha quando o usuário ativador colide em outro usuário. Efeitos aplicados em usuários (teleporte, entrar na equipe, caminhar até o mobi, dentre outros) são feitos no usuário que colidiu."
+        },
+        {
+            "name": "Mobi muda de estado, posição ou direção",
+            "help": "Ativa os efeitos da pilha quando o mobi selecionado muda seu estado, posição ou direção. Ao mover o mobi para o local em que ele foi marcado não executará o efeito, tendo de mover para qualquer posição exceto aquela."
+        },
+        {
+            "name": "Repetir Efeito",
+            "help": "Repete os efeitos da pilha em um determinado período de tempo (varia entre 0.5s à 60s)."
+        },
+        {
+            "name": "Duração periódica",
+            "help": "Repete os efeitos da pilha em um determinado período de tempo (varia entre 5s à 600s)."
+        },
+        {
+            "name": "Bot: alcança o usuário",
+            "help": "Ativa os efeitos da pilha quando o bot colide com algum usuário."
+        },
+        {
+            "name": "Bot: alcança o mobi",
+            "help": "Ativa os efeitos da pilha quando o bot sobe no mobi selecionado."
+        }
+    ],
+    "comparadores": [
+        {
+            "name": "Usuário: Igual à",
+            "help": "Permite disparar efeitos se o valor na memória do usuário ativador é igual ao valor definido."
+        },
+        {
+            "name": "Usuário: Menor que",
+            "help": "Permite disparar efeitos se o valor na memória do usuário ativador é menor que o valor definido."
+        },
+        {
+            "name": "Usuário: Maior que",
+            "help": "Permite disparar efeitos se o valor na memória do usuário ativador é maior que o valor definido."
+        },
+        {
+            "name": "Usuário: Menor ou igual à",
+            "help": "Permite disparar efeitos se o valor na memória do usuário ativador é menor ou igual ao valor definido."
+        },
+        {
+            "name": "Usuário: Maior ou igual à",
+            "help": "Permite disparar efeitos se o valor na memória do usuário ativador é maior ou igual ao valor definido."
+        },
+        {
+            "name": "Memória: Igual à",
+            "help": "Permite disparar efeitos se o valor do bloco de memória é igual ao valor definido."
+        },
+        {
+            "name": "Memória: Diferente de",
+            "help": "Permite disparar efeitos se o valor o bloco de memória é diferente do valor definido."
+        },
+        {
+            "name": "Memória: Menor que",
+            "help": "Permite disparar efeitos se o valor o bloco de memória é menor que o valor definido."
+        },
+        {
+            "name": "Memória: Maior que",
+            "help": "Permite disparar efeitos se o valor o bloco de memória é maior que o valor definido."
+        },
+        {
+            "name": "Memória: Menor ou igual à",
+            "help": "Permite disparar efeitos se o valor o bloco de memória é menor ou igual ao valor definido."
+        },
+        {
+            "name": "Memória: Maior ou igual à",
+            "help": "Permite disparar efeitos se o valor o bloco de memória é maior ou igual ao valor definido. É permitido comparar o valor com um bloco de memória inserindo o nome do bloco."
+        },
+        {
+            "name": "Memória: Universal",
+            "help": "Permite disparar efeitos se o valor o bloco de memória coincide com a determinada comparação no comparador universal (pode-se usar qualquer comparação neste wired) Igual: a==b; Diferente: a!=b; Maior: a>b; Menor: a<b; Maior ou igual: a>=b; Menor ou igual: a<=b."
+        }
+    ],
+    "condicoes negativas": [
+        {
+            "name": "Estado, posição e direção do mobi não coincide",
+            "help": "Permite disparar os efeitos da pilha caso o estado, posição e/ou direção do mobi selecionado não combine com a mesma no momento em que foi marcado e confirmado."
+        },
+        {
+            "name": "Estado, posição e direção relativas não coincidem",
+            "help": "Permite disparar os efeitos da pilha caso o estado, posição e/ou direção dos mobis selecionados sejam diferentes relativamente. Exemplo com 2 esferas em estados relativos: As duas precisam em estados alternados (uma acesa e outra apagada); Exemplo com 2 esferas em posições relativas: As duas precisam estar em posições diferentes uma em relação a outra."
+        },
+        {
+            "name": "Não tem mobi em cima",
+            "help": "Permite disparar os efeitos da pilha caso um ou todos os mobis selecionados não tenha algum mobi em cima (escolha entre um ou todos pelo seletor)."
+        },
+        {
+            "name": "Tipo do mobi não coincide",
+            "help": "Permite disparar os efeitos da pilha caso seja usado qualquer mobi diferente do mobi selecionado para ativar efeitos. Essa condição é exclusivamente usada no ativador batida para definir o mobi que não deverá ativar determinado efeito caso o usuário seja colidido por ele."
+        },
+        {
+            "name": "Mobis sem usuários",
+            "help": "Permite disparar os efeitos da pilha caso os mobis selecionados não possuam usuários."
+        },
+        {
+            "name": "Usuário ativador não está no mobi",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador não esteja no mobi selecionado. Essa condição é usada para delimitar regiões em que o usuário não pode ativar efeitos, portanto ela não é funcional com ativadores automáticos (como repetir efeito)."
+        },
+        {
+            "name": "Não há usuários suficientes no quarto",
+            "help": "Permite disparar os efeitos da pilha caso o quarto não tenha no mínimo uma determinada quantidade de players."
+        },
+        {
+            "name": "Não é membro da equipe",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador não seja membro da equipe determinada na condição."
+        },
+        {
+            "name": "Não é membro do grupo",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador não seja membro do grupo do quarto."
+        },
+        {
+            "name": "Não é membro do ID do grupo",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador não seja membro do grupo determinado na condição por meio do ID."
+        },
+        {
+            "name": "Fora do raio do mobi",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador esteja fora do raio de pisos em relação à um mobi. Exemplo: Se o valor for 1, o usuário precisa estar fora do raio de 1 piso de distância do mobi selecionado."
+        },
+        {
+            "name": "Não usa o efeito",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador não esteja usando o número de enable determinado."
+        },
+        {
+            "name": "Não usa o emblema",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador não esteja usando o emblema no perfil, determinado pelo código. O código é o identificador daquele emblema, você pode encontrar os códigos de cada emblema em blet.in ou no twitter oficial do hotel (Ex: HBT1667)."
+        },
+        {
+            "name": "Usuário não tem quantidade de diamantes",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador não tenha determinada quantidade de diamantes."
+        },
+        {
+            "name": "Usuário não tem quantidade de duckets",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador não tenha determinada quantidade de duckets."
+        },
+        {
+            "name": "Usuário não está dançando",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador não esteja dançando determinada dança. Definidas pelos valores de 1 à 4 (hap-hop, pogo mogo, duck funk e rollie)."
+        },
+        {
+            "name": "Usuário não tem item",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador não tenha o handitem, determinado pelo número."
+        },
+        {
+            "name": "Usuário não está ausente",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador não esteja ausente (sem efeito :idle)."
+        },
+        {
+            "name": "Usuário não contém missão",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador não tenha determinada mensagem como missão de perfil."
+        },
+        {
+            "name": "Nome de usuário não combina",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador tenha o nick diferente ao definido na condição."
+        },
+        {
+            "name": "Usuário não tem direitos",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador não tenha direitos no quarto."
+        }
+    ],
+    "condicoes positivas": [
+        {
+            "name": "Estado, posição e direção do mobi combinam",
+            "help": "Permite disparar os efeitos da pilha caso o estado, posição e/ou direção do mobi selecionado combine com a mesma no momento em que foi marcado e confirmado. Exemplo: Uma esfera foi marcada no estado acesa, então só poderá disparar efeitos se a esfera estiver acesa."
+        },
+        {
+            "name": "Estado, posição e direção relativas combinam",
+            "help": "Permite disparar os efeitos da pilha caso o estado, posição e/ou direção dos mobis selecionados sejam iguais relativamente. Exemplo com 2 esferas em estados relativos: As duas precisam estar apagadas ou acesas; Exemplo com 2 esferas em posições relativas: As duas precisam estar nas mesmas posições uma em relação a outra."
+        },
+        {
+            "name": "Tem mobi em cima",
+            "help": "Permite disparar os efeitos da pilha caso um ou todos os mobis selecionados tenha algum mobi em cima (escolha entre um ou todos pelo seletor)."
+        },
+        {
+            "name": "Tipo do mobi coincide",
+            "help": "Permite disparar os efeitos da pilha caso seja usado o mobi selecionado para ativar efeitos. Essa condição é exclusivamente usada no ativador batida para definir o mobi que ativará determinado efeito caso o usuário seja colidido por ele."
+        },
+        {
+            "name": "Mobis com usuários",
+            "help": "Permite disparar os efeitos da pilha caso os mobis selecionados possuam usuários."
+        },
+        {
+            "name": "Usuário ativador está no mobi",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador esteja em qualquer mobi selecionado. Essa condição é usada para delimitar regiões em que o usuário pode ativar efeitos, portanto ela não é funcional com ativadores automáticos (como repetir efeito)."
+        },
+        {
+            "name": "Há usuários suficientes no quarto",
+            "help": "Permite disparar os efeitos da pilha caso o quarto tenha no mínimo uma determinada quantidade de players."
+        },
+        {
+            "name": "Membro da equipe",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador seja membro da equipe determinada na condição."
+        },
+        {
+            "name": "Membro do grupo",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador seja membro do grupo do quarto."
+        },
+        {
+            "name": "Membro do ID do grupo",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador seja membro do grupo determinado na condição por meio do ID."
+        },
+        {
+            "name": "Dentro do raio do mobi",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador esteja dentro do raio de pisos em relação à um mobi. Exemplo: Se o valor for 1, o usuário precisa estar pelo menos 1 piso de distância do mobi selecionado."
+        },
+        {
+            "name": "Usando o efeito",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador esteja usando o número de enable determinado."
+        },
+        {
+            "name": "Usando o emblema",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador esteja usando o emblema no perfil, determinado pelo código. O código é o identificador daquele emblema, você pode encontrar os códigos de cada emblema em blet.in ou no twitter oficial do hotel (Ex: HBT1667)."
+        },
+        {
+            "name": "Usuário tem quantidade de diamantes",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador tenha determinada quantidade de diamantes."
+        },
+        {
+            "name": "Usuário tem quantidade de duckets",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador tenha determinada quantidade de duckets."
+        },
+        {
+            "name": "Usuário está dançando",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador esteja dançando determinada dança. Definidas pelos valores de 1 à 4 (hap-hop, pogo mogo, duck funk e rollie)."
+        },
+        {
+            "name": "Usuário tem item",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador tenha o handitem, determinado pelo número."
+        },
+        {
+            "name": "Usuário está ausente",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador esteja ausente (em efeito :idle)"
+        },
+        {
+            "name": "Usuário contém missão",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador tenha determinada mensagem como missão de perfil."
+        },
+        {
+            "name": "Nome de usuário combina",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador tenha o nick igual ao definido na condição."
+        },
+        {
+            "name": "Usuário tem direitos",
+            "help": "Permite disparar os efeitos da pilha caso o usuário ativador tenha direitos no quarto."
+        },
+        {
+            "name": "Menos de X segundos passados",
+            "help": "Permite disparar os efeitos da pilha caso o tempo do quarto seja menor que o tempo determinado nessa condição. Essa condição trabalha em conjunto com o efeito reiniciar tempo."
+        },
+        {
+            "name": "Mais de X segundos passados",
+            "help": "Permite disparar os efeitos da pilha caso o tempo do quarto seja maior que o tempo determinado nessa condição. Essa condição trabalha em conjunto com o efeito reiniciar tempo."
+        },
+        {
+            "name": "Viking Wired",
+            "help": "Permite disparar os efeitos da pilha caso o calendário esteja entre a data e hora de inicio e fim definidas na condição."
+        },
+        {
+            "name": "Super Wired",
+            "help": "Permite disparar os efeitos da pilha englobando diversas configurações condicionais. Tem/não tem handitem; Tem/não tem enable; Tem/não tem equipe; Tem/não tem vip; Tem/não tem emblema; É membro/não é membro do grupo; Tem/não tem grupo favorito; Tem/não tem missão; Tem/não tem determinada missão; É/não é do gênero."
+        }
+    ],
+    "efeitos": [
+        {
+            "name": "Pilha Wired",
+            "help": "Copia todos os efeitos de uma ou mais pilhas de wireds. Selecionando qualquer mobi da pilha, ele copiará todos os efeitos."
+        },
+        {
+            "name": "Super Pilha",
+            "help": "Copia todos os efeitos e condições de uma ou mais pilhas de wireds. Selecionando qualquer mobi da pilha, ele copiará todos os efeitos e condições."
+        },
+        {
+            "name": "Mobis que voltam à programação original",
+            "help": "Devolve ao mobi selecionado o estado, posição ou direção que ele estava no momento em que foi marcado. Pode-se utilizar os seletores individuais ou combinando-os."
+        },
+        {
+            "name": "Mudar estado do mobi",
+            "help": "Muda o estado do mobi selecionado na ordem original de processos."
+        },
+        {
+            "name": "Mudar estado do mobi reverso",
+            "help": "Muda o estado do mobi selecionado na ordem inversa de processos."
+        },
+        {
+            "name": "Mudar estado do mobi aleatório",
+            "help": "Muda o estado do mobi selecionado numa ordem aleatória de processos."
+        },
+        {
+            "name": "Perseguir",
+            "help": "Persegue o jogador mais próximo ao mobi selecionado. Movimento que dispara batida: Esse efeito não colide simultaneamente em 2 jogadores ou mais."
+        },
+        {
+            "name": "Fugir",
+            "help": "O mobi selecionado foge de todos os jogadores. Movimento que dispara batida: Esse efeito não colide simultaneamente em 2 jogadores ou mais."
+        },
+        {
+            "name": "Mudar direção do mobi",
+            "help": "Determina movimentos padrões ao mobi selecionado, podendo variar a direção apenas ao atingir algum obstáculo conforme os seletores. Movimento que dispara batida: Esse efeito colide simultaneamente em diversos jogadores."
+        },
+        {
+            "name": "Mover e rotacionar mobi",
+            "help": "Determina movimentos e/ou rotações padronizadas ou aleatórias de acordo com o seletor no mobi selecionado."
+        },
+        {
+            "name": "Colisão em volta",
+            "help": "Determina movimentos e/ou rotações padronizadas ou aleatórias de acordo com o seletor no mobi selecionado. Caso selecione nenhum movimento e nenhuma rotação, o mobi poderá disparar batida nos 8 pisos ao redor dele. Movimento que dispara batida: Esse efeito não colide simultaneamente em diversos jogadores."
+        },
+        {
+            "name": "Colisão de topo",
+            "help": "Dispara o ativador batida nos jogadores que estiverem em cima do mobi selecionado. Movimento que dispara batida: Esse efeito colide simultaneamente em diversos jogadores."
+        },
+        {
+            "name": "Teleportar para o mobi",
+            "help": "Teleporta o usuário ativador para o mobi selecionado."
+        },
+        {
+            "name": "Teleportar mobi ao usuário",
+            "help": "Teleporta o mobi selecionado ao local em que o usuário ativador está."
+        },
+        {
+            "name": "Teleportar para o quarto",
+            "help": "Teleporta usuário ativador para o quarto indicado por meio do ID."
+        },
+        {
+            "name": "Kickar usuário",
+            "help": "Expulsa o usuário ativador do quarto."
+        },
+        {
+            "name": "Silenciar usuário",
+            "help": "Silencia o usuário ativador pelo tempo determinado no wired, podendo também personalizar uma mensagem de aviso."
+        },
+        {
+            "name": "Caminhar até mobília",
+            "help": "Faz o usuário ativador andar até o mobi selecionado se ele estiver em um local possível de alcançar caminhando."
+        },
+        {
+            "name": "Deitar Usuário",
+            "help": "O comando :lay (deitar) é forçado no usuário ativador."
+        },
+        {
+            "name": "Sentar usuário",
+            "help": "O comando :sit (sentar) é forçado no usuário ativador."
+        },
+        {
+            "name": "Girar usuário",
+            "help": "O usuário tem seu personagem girado para uma determinada direção, sendo 4 direções retas e 4 diagonais (valores começando do 0 ao 7)."
+        },
+        {
+            "name": "Mostrar mensagem",
+            "help": "Mostra uma determinada mensagem apenas ao usuário ativador. Comando para ser referir ao usuário: %username%"
+        },
+        {
+            "name": "Mostrar mensagem à todos",
+            "help": "Mostra uma determinada mensagem para todos do quarto. Comando para ser referir ao usuário: %username% (o efeito não diz o nick do usuário ativador, e sim do próprio usuário que recebeu a mensagem)."
+        },
+        {
+            "name": "Entrar na equipe",
+            "help": "Entra em uma determinada equipe (vermelha, azul, verde, amarela)."
+        },
+        {
+            "name": "Sair da equipe",
+            "help": "Sai de qualquer equipe que o usuário entrou."
+        },
+        {
+            "name": "Finalizar partida",
+            "help": "Pausa um determinado cronômetro de jogo."
+        },
+        {
+            "name": "Dar pontos",
+            "help": "Dá pontos individuais ou coletivos ao usuário ativador nos placares de classificação."
+        },
+        {
+            "name": "Pontos individuais",
+            "help": "Dá pontos ao usuário ativador apenas em placares de classificação que registram players individuais, e não em duplas ou mais componentes."
+        },
+        {
+            "name": "Resetar placar",
+            "help": "Limpa qualquer placar de classificação que o usuário selecionar nesse wired."
+        },
+        {
+            "name": "Reiniciar tempo",
+            "help": "Reinicia o temporizador do quarto em si. O quarto tem um temporizador que permanece em 0 segundos quando não há ninguém, e começa a contar quando entra pelo menos um player no quarto."
+        },
+        {
+            "name": "Regenerar",
+            "help": "Apaga a presença (entidade) de todos os usuários parados no quarto, podendo alocar qualquer mobi ou player no espaço em que o usuário estiver. O efeito tem um cooldown de 60s e pode ser retirado do usuário por meio de colisão feita com efeitos perseguir e fugir, por ativação de anti afk ou por anti loop afk."
+        },
+        {
+            "name": "Definir velocidade do roller",
+            "help": "Determina a velocidade de rolamento que os rollers do quarto irão ter, semelhante ao comando :setspeed (0 - 20). A velocidade de rotação é indeterminada quando escolhe-se um valor acima de 20, assim os rollers não realizam o rolamento."
+        },
+        {
+            "name": "Fechar dados",
+            "help": "Volta o estado dos holo dados do quarto para o estado fechado."
+        },
+        {
+            "name": "Luzes",
+            "help": "Controla o regulador de luz do quarto, tendo as funções de ligar ou desligar o interruptor."
+        },
+        {
+            "name": "Youtube",
+            "help": "Abre um vídeo do youtube na tela do usuário ativador, conforme o link que for programado."
+        },
+        {
+            "name": "Subir mobis",
+            "help": "Faz o mobi selecionado subir 0.1 no valor de altura conforme lajota a cada ativação."
+        },
+        {
+            "name": "Descer mobis",
+            "help": "Faz o mobi selecionado descer 0.1 no valor de altura conforme lajota a cada ativação."
+        },
+        {
+            "name": "Super Wired",
+            "help": "Executa efeitos de moderação de comandos do quarto e manipula pontos de placar de cada player. Pode ativar ou desativar comandos como: enable, sit, moonwalk, roommute, respect, push, pull, handitem, entre outros."
+        },
+        {
+            "name": "Bot: Fala ou sussurra ao usuário",
+            "help": "O bot fala ou sussurra uma mensagem apenas ao usuário ativador. Comando para se referir ao usuário: %username%."
+        },
+        {
+            "name": "Bot: Fala ou sussurra à todos os usuários",
+            "help": "O bot fala ou sussurra uma mensagem para todos os usuários do quarto. Esse efeito pode ser ativado por ativadores que não necessitam de um usuário para disparar (como o repetir efeito)."
+        },
+        {
+            "name": "Bot: Segue o usuário",
+            "help": "O bot passa a seguir o usuário ativador."
+        },
+        {
+            "name": "Bot: Dar a bebida",
+            "help": "O bot entrega um handitem ao usuário ativador. O bot pode entregar nada se você não determinar qual bebida deve ser entregue, removendo qualquer handitem que o usuário ativador estiver segurando."
+        },
+        {
+            "name": "Bot: Se move ao mobi",
+            "help": "O bot anda até o mobi selecionado se o mobi estiver em um local possível de se alcançar caminhando."
+        },
+        {
+            "name": "Bot: Teleportar para o mobi",
+            "help": "O bot teleporta para o mobi selecionado. Esse efeito não é ativado por disparadores automáticos (como repetir efeito)."
+        },
+        {
+            "name": "Bot: Muda de roupa",
+            "help": "O bot muda seu estilo de visual para o visual determinado no wired."
+        }
+    ],
+    "extras": [
+        {
+            "name": "Efeito aleatório",
+            "help": "Executa aleatoriamente um efeito da pilha em cada ativação."
+        },
+        {
+            "name": "Efeito inédito",
+            "help": "Executa os efeitos pilha numa ordem definida em cada ativação."
+        },
+        {
+            "name": "Qualquer condição válida",
+            "help": "Define que para ativar a pilha, qualquer condição deve ser satisfeita, e não necessariamente todas."
+        },
+        {
+            "name": "Dar dança",
+            "help": "Aplica uma determinada dança ao usuário ativador."
+        },
+        {
+            "name": "Dar efeito",
+            "help": "Aplica um determinado enable ao usuário ativador."
+        },
+        {
+            "name": "Dar handitem",
+            "help": "Dá um determinado handitem ao usuário ativador."
+        },
+        {
+            "name": "Andar rápido",
+            "help": "Habilita/desabilita o faskwalk no usuário ativador."
+        },
+        {
+            "name": "Fastwalk",
+            "help": "O tempo de cada passo que o usuário der é cortado pela metade (valores 0 ou 1)."
+        },
+        {
+            "name": "Congelar",
+            "help": "Congela o usuário ativador."
+        },
+        {
+            "name": "Descongelar",
+            "help": "Descongela o usuário ativador."
+        }
+    ],
+    "iron wireds": [
+        {
+            "name": "Elevar ou abaixar mobi",
+            "help": "Eleva os mobis selecionados no intervalo definido (use valores negativos para descer os mobis)."
+        },
+        {
+            "name": "Definir X absoluto do mobi",
+            "help": "Move os mobis selecionados ao valor definido na coordenada X."
+        },
+        {
+            "name": "Definir Y absoluto do mobi",
+            "help": "Move os mobis selecionados ao valor definido na coordenada Y."
+        },
+        {
+            "name": "Definir Z absoluto do mobi",
+            "help": "Move os mobis selecionados ao valor definido na coordenada Z."
+        },
+        {
+            "name": "Definir tempo",
+            "help": "Altera o tempo do cronômetro selecionado para o tempo definido (parâmetro em segundos). Exemplo: 3:00 - 180."
+        },
+        {
+            "name": "Perseguir (sem subir)",
+            "help": "Persegue os usuários sempre na altura do piso (altura 0), ignorando a altura dos demais mobis."
+        },
+        {
+            "name": "Silenciar usuário",
+            "help": "Silencia o usuário ativador."
+        },
+        {
+            "name": "Silenciar quarto",
+            "help": "Silencia todos os usuários do quarto."
+        },
+        {
+            "name": "Desilenciar usuário",
+            "help": "Desilencia o usuário ativador."
+        },
+        {
+            "name": "Desilenciar quarto",
+            "help": "Desilencia todos os usuários do quarto."
+        },
+        {
+            "name": "Tira X pontos do usuário",
+            "help": "Remove X pontos do usuário ativador no placar individual."
+        },
+        {
+            "name": "Tira X pontos do time",
+            "help": "Remove X pontos do time definito no placar de times."
+        },
+        {
+            "name": "Usuário atinge X pontos",
+            "help": "Ativa os efeitos da pilha quando o usuário ativador atinge X pontos no placar individual."
+        },
+        {
+            "name": "Time atinge X pontos (por time)",
+            "help": "Ativa os efeitos da pilha quando o time atinge X pontos no placar de times."
+        },
+        {
+            "name": "Time atinge X pontos (por membro)",
+            "help": "Ativa os efeitos da pilha quando o membro do time atinge X pontos no placar de times."
+        },
+        {
+            "name": "Ativador: Todos os usuários",
+            "help": "Ativa os efeitos da pilha com todos os usuários do quarto (caso tenha condições na pilha, ativa os efeitos com todos os usuários que se encaixarem nas condições)."
+        },
+        {
+            "name": "Efeito: Todos os usuários",
+            "help": "Executa o ativador: Todos os usuários."
+        },
+        {
+            "name": "Bloco de memória",
+            "help": "Armazena valores passados manualmente ou pelos operadores."
+        }
+    ],
+    "operadores": [
+        {
+            "name": "Usuário: Definir",
+            "help": "Atribui o valor definido à memória do usuário ativador."
+        },
+        {
+            "name": "Usuário: Somar",
+            "help": "Soma o valor definido com o valor da memória do usuário ativador."
+        },
+        {
+            "name": "Usuário: Subtrair",
+            "help": "Subtrai o valor definido do valor da memória do usuário ativador."
+        },
+        {
+            "name": "Usuário: Incrementar",
+            "help": "Incrementa (+1) na memória do usuário ativador."
+        },
+        {
+            "name": "Usuário: Decrementar",
+            "help": "Decrementa (-1) da memória do usuário ativador."
+        },
+        {
+            "name": "Memória: Definir",
+            "help": "Atribui o valor definido ao bloco de memória selecionado."
+        },
+        {
+            "name": "Memória: Somar",
+            "help": "Soma o valor definido ao valor de cada bloco de memória selecionado."
+        },
+        {
+            "name": "Memória: Subtrair",
+            "help": "Subtrai o valor definido do valor de cada bloco de memória selecionado."
+        },
+        {
+            "name": "Memória: Incrementar",
+            "help": "Incrementa (+1) ao valor de cada bloco de memória selecionado."
+        },
+        {
+            "name": "Memória: Decrementar",
+            "help": "Decrementa (-1) do valor de cada bloco de memória selecionado."
+        },
+        {
+            "name": "Memória: Universal",
+            "help": "Executa qualquer calculo e interage entre blocos de memória.  Operações básicas: soma(+), subtração(-), multiplicação(*), divisão(/), resto da divisão(%).  Funções:"
+        },
+        {
+            "name": "Memória: Mensagem",
+            "help": "Mostra uma mensagem ao usuário ativador contendo o valor do bloco de memória informado. Utiliza-se \"%valor%\" para identificar onde deve aparecer o valor da memória."
+        }
+    ]
+}

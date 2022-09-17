@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Navbar from './components/Navbar';
+import Navbar, { nav } from './components/Navbar';
 
 import { IWireds, IWiredType } from './wiredInterfaces';
 
@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 
 function App() {
   const allWireds: IWireds = wireds;
-  const [wiredType, setWiredType] = useState<IWiredType>("ativadores");
+  const [wiredType, setWiredType] = useState<IWiredType>(nav[0].wiredType);
 
   const filteredWireds = allWireds[wiredType];
 

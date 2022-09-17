@@ -4,7 +4,48 @@ interface INavbarProps {
   changeWiredType(wiredType: IWiredType): any;
 }
 
+interface INavItem {
+  text: string;
+  wiredType: IWiredType;
+}
+
+export const nav: INavItem[] = [
+  {
+    text: "Condições Positivas",
+    wiredType: "condicoes positivas"
+  },
+  {
+    text: "Condições Negativas",
+    wiredType: "condicoes negativas"
+  },
+  {
+    text: "Ativadores",
+    wiredType: "ativadores"
+  },
+  {
+    text: "Efeitos",
+    wiredType: "efeitos"
+  },
+  {
+    text: "Operadores",
+    wiredType: "operadores"
+  },
+  {
+    text: "Comparadores",
+    wiredType: "comparadores"
+  },
+  {
+    text: "Iron Wireds",
+    wiredType: "iron wireds"
+  },
+  {
+    text: "Extras",
+    wiredType: "extras"
+  },
+]
+
 export default function Navbar({ changeWiredType }: INavbarProps) {
+
   return (
     <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
@@ -20,55 +61,13 @@ export default function Navbar({ changeWiredType }: INavbarProps) {
 
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li onClick={() => changeWiredType("ativadores")}>
-              <a className="cursor-pointer block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                Ativadores
-              </a>
-            </li>
-
-            {/* cursor-pointer block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white */}
-
-            <li onClick={() => changeWiredType("efeitos")}>
-              <a className="cursor-pointer block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                Efeitos
-              </a>
-            </li>
-
-            <li onClick={() => changeWiredType("condicoes positivas")}>
-              <a className="cursor-pointer block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                Condições Positivas
-              </a>
-            </li>
-
-            <li onClick={() => changeWiredType("condicoes negativas")}>
-              <a className="cursor-pointer block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                Condições Negativas
-              </a>
-            </li>
-
-            <li onClick={() => changeWiredType("extras")}>
-              <a className="cursor-pointer block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                Extras
-              </a>
-            </li>
-
-            <li onClick={() => changeWiredType("iron wireds")}>
-              <a className="cursor-pointer block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                Iron Wireds
-              </a>
-            </li>
-
-            <li onClick={() => changeWiredType("operadores")}>
-              <a className="cursor-pointer block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                Operadores
-              </a>
-            </li>
-
-            <li onClick={() => changeWiredType("comparadores")}>
-              <a className="cursor-pointer block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                Comparadores
-              </a>
-            </li>
+            {nav.map(item => (
+              <li onClick={() => changeWiredType(item.wiredType)}>
+                <a className="cursor-pointer block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                  {item.text}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

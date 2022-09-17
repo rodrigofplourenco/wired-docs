@@ -34,7 +34,7 @@ function App() {
     <>
       <Navbar changeWiredType={changeWiredType} />
 
-      <div className="px-6 py-8 grid grid-cols-6 gap-6">
+      <div className="px-6 py-8 grid grid-cols-5 gap-6 mx-auto">
         {filteredWireds.map((wired, index) => (
           <div key={wired.name} className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
               <a href="#" className='flex justify-center my-6'>

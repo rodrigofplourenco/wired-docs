@@ -6,6 +6,7 @@ import { IWireds, IWiredType } from './wiredInterfaces';
 import wireds from './assets/utils/wireds.json';
 
 import './styles/main.css'
+import Footer from './components/Footer';
 
 
 function App() {
@@ -46,6 +47,8 @@ function App() {
           </div>
         ))}
       </div>
+
+      <Footer />
     </>
   );
 }
